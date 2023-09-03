@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.sidebar {
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+    background: rgb(25, 146, 212);
+}
+
+.material-icons {
+    color: white;
+}
