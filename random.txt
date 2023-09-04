@@ -1,0 +1,5 @@
+<div class="upper-header"> </div>
+<div class="lower-header"></div>
+.announcements p.title {
+    padding: 10px;
+}
