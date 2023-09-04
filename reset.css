@@ -1,68 +1,104 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* Reset CSS */
+
+/* Box sizing reset */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*
-  2. Remove default margin
-*/
-* {
-    margin: 0;
-}
-
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-
-/*
-  5. Improve media defaults
-*/
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/*
-  6. Remove built-in form typography styles
-*/
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/*
-  7. Avoid text overflows
-*/
-p,
+/* Remove default margin and padding */
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    overflow-wrap: break-word;
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
 }
 
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-    isolation: isolate;
+/* Remove list styles (bullet points and numbers) */
+ul,
+ol {
+  list-style: none;
 }
+
+/* Typography reset */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: 1.15;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Remove default input styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="search"],
+textarea {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  font-family: inherit;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Add a baseline font-size for easier scaling */
+html {
+  font-size: 16px;
+}
+
+/* Define the root color and background-color properties */
+:root {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+/* Apply the root colors to the body */
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Optionally, you can add more styles and customizations here */
